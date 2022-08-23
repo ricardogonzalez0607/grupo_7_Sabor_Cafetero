@@ -14,23 +14,33 @@ Probamos cada Café
 Te lo entregamos
 "Cuando sientas esa fragancia tan deliciosa ¡es porque llegamos a tu hogar! Con nosotros nunca te va a faltar el café especial en tu cocina."
 
+Realizamos un barrido de diferentes paginas Web que se relacionaran con el negocio de comercializar café artesanal y filtramos los siguientes 
+sitios web: 
+
+https://tucafeartesanal.com/somos-cafe-artesanal/
+Son una empresa productora, tostadora y comercializadora de café artesanal verde y tostado 100% Colombiano. Además de otros derivados. 
+Tienen un nicho muy similar al de nosotros, pero se diferencia en que nosotros solo pretendemos ser comercializadores.
+
+https://www.caffinocolombia.com/
+Son una empresa comercializadora de café artesanal de las regiones del centro del país y manejan una oferta de cafés saborizados con 
+ingredientes naturales. Son mezclas físicas de semillas y/o partes de plantas aromáticas: Cardamomo, clavo, canela, vainilla y té negro. 
+Cuentan con productos innovadores que nos interesa comercializar. 
+
+http://cafedelhuerto.com.co/
+Son una empresa productora, tostadora y comercializadora de café orgánico y artesanal. El café orgánico es cultivado en una finca Eco Sostenible.
+Este segmento de productos orgánicos y naturales ha venido ganado terreno en los últimos años debido al gran impacto que tienen en la salud de
+las personas.
+
+https://devocion.com.co/
+Son una empresa comercializadora de café artesanal prémium de diferentes lugares del país con procesos exhaustivos de selección del fruto 
+en el momento de la madurez perfecta, extracción y secado de la semilla, y, finalmente, tostar a la perfección. Nos interesa tener una oferta de 
+este tipo de productos para clientes VIP.
+
+https://latiendadelcafe.co/
+Son una empresa comercializadora de café. Pero nos interesa la estética del su sitio Web y sus funcionalidades.
+
 Grupo colaborativo #7
 Jorge
 Ricardo
 Carlos
-
-Listado de referentes:
-https://latiendadelcafe.co/
-Por su variedad de productos y diseño del sitio
-
-https://comprocafedecolombia.com/
-Por su variedad de productos y diseño del sitio
-
-https://www.cafemulato.com/
-Por su variedad de productos y diseño del sitio
-
-https://cafeamorperfecto.com/
-Por su variedad de productos y diseño del sitio
-
-http://www.fincafe.co/
-Por su variedad de productos y diseño del sitio
+ 
