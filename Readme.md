@@ -28,6 +28,7 @@ Jorge
 
 
 Carlos
+Soy un empredendor apasionado por los negocios y las nuevas oportunidades que nos presenta la vida, tengo estudios en asesoria comercial y financiera y en seguridad y salud en el trabajo. Me gusta viajar, conocer nuevos paisajes, personas y vivir nuevas experiencias. En mis tiempos libres lo dedico a escuchar musica, rumbear, salir a cine y estar en familia. El mundo de la programacion es un mundo nuevo para mí, que quiero descrubir y sacar su maximo provecho!
 
 Sitios web: 
 
