@@ -17,12 +17,12 @@ nav {
 }
 
 .menuTop-left {
-    /* display: flex;
+    display: flex;
     justify-content: center;
-    align-items: center; */
+    align-items: center;
 }
 .menuTop-left input{
-    margin-left: .5rem;
+    /* margin-left: .5rem; */
     background-color: transparent;
     border-color: transparent;
     font-size: 25px;
@@ -40,7 +40,7 @@ nav {
 .menuTop-mid {
     display: flex;
     align-items: center;
-    width: 60%;
+    /* width: 60%; */
 }
 .menuTop-mid a {
     color: white;
@@ -48,19 +48,19 @@ nav {
 }
 .menuTop-mid h1{
     font-family: 'Rubik Dirt', cursive;
-    font-size: 85px;
+    /* font-size: 85px; */
     color: white;
     text-shadow:  4px 4px 4px #EC0650;
     /* margin-left: -200px; */
 }
-.logo {
+/* .logo {
     width: 59px;
     height: 59px;
-  }
+  } */
 
-.menutop-right {
+/* .menutop-right {
     margin-right: 1rem;
-}
+} */
 /* .menutop-right i:nth-of-type(1) {
     color: #EC0650;
 } */
@@ -84,7 +84,7 @@ i:hover {
 }
 
 /*backs*/
-.backs {/* notenedor imgs */
+.backs {
     width: 100%;
     height: 640px;
     background-image: url('https://cdn.pixabay.com/photo/2016/04/12/11/19/coffee-1324126_960_720.jpg');
@@ -135,7 +135,6 @@ i:hover {
 
 /*services*/
 .services {
-    width: 100%;
     display: flex;
     justify-content: space-around;
     background-color: #faf5f5;
@@ -153,8 +152,8 @@ i:hover {
 }
 
 /*cards Antioquia*/
-.antioquia {
-    width: 100%;
+.antioquia {/* 
+    width: 100%; */
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -169,8 +168,8 @@ i:hover {
 }
 
 /*Antioquia cards*/
-.cards {
-     width: 100%;
+.cards {/* 
+     width: 100%; */
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -403,3 +402,23 @@ i:hover {
     width: 100%;
   }
 
+
+  .slider { 
+    display: flex; /* esto hace que las imagenes se alineen horizontalmente y se salgan del contenedor */
+    height: 320px;
+    width: 100%; 
+    overflow-x: scroll;/* lo que queda por fuera del vw se oculta, solo es accesible por scroll */
+    scroll-snap-type: x mandatory;/* hace que al hacer scroll junto con la propiedad que esta en img centre la vista auto */
+}
+.slider span {
+    display: inline-block;
+    height: 320px;
+    width: 100%;
+    overflow-x: scroll;/* lo que queda por fuera del vw se oculta, solo es accesible por scroll */
+    scroll-snap-type: x mandatory;
+}
+.slider img {
+    width: 100%;
+    object-fit:cover;
+    scroll-snap-align: center;
+}

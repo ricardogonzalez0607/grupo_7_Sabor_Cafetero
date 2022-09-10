@@ -1,9 +1,9 @@
-const backs = document.querySelector('.backs')
+const backs = document.querySelector('.slider')
 const box = document.querySelectorAll('.box')
 const nav = document.querySelector('nav')
-console.log(nav)
-
-nav.style.backgroundImage = 'none'
+console.log(box[0])
+//box[0].style.backgroundImage = "url(https://elviajerofeliz.com/wp-content/uploads/2019/10/Que-ver-en-Medellin-_-10-Lugares-Imprescindibles.jpg)"
+//nav.style.backgroundImage = 'none'
 
 const change = (n, url) => {   
     box[n].onmouseover = () => {
