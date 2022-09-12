@@ -71,11 +71,12 @@ i:nth-of-type(1){
     background-color: white;
     padding: 8px;
     border-radius: 100%;
+    justify-content: right;
 }
 .fa, .fas {
     font-weight: 600;
     font-size: 14px;
-    color: white;
+    color: black;
 }
 
 i:hover {
