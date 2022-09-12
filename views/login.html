@@ -16,7 +16,7 @@
 <body>
     <header>
         <div class="left">
-            <i class="fas fa-search"></i>
+            <i class="fas fa-search ileft"></i>
             <input type="text" placeholder="Buscar">
         </div>
         <div>
@@ -62,34 +62,37 @@
                             cols="30" rows="9"></input>
                         <label class="input-label" for="urlImg">Contraseña</label>
                     </div>
-                    <div class="btn">
+                    <div class="btnLogin">
                         <button class="button" value="Login" type="submit">Login</button>
                     </div>
                 </form>
             </div>
         </section>
         <section class="contacto">
-            <div class="contact">
+            <div>
                 <img src="https://cdn.pixabay.com/photo/2016/11/23/18/15/board-1854180__340.jpg" alt="">
-                <form class="formulario" action="/" method="POST">
+                <form action="#" class="formulario" data-form>
                     <h2>Contactenos</h2>
                     <div class="input-container">
-                        <input name="email" id="email" class="input" type="text" placeholder="sabor@gmail.com" required
-                            data-url>
+                        <input name="email" id="email" class="input" type="text" placeholder="ejm... myemail@gmail.com"
+                            required data-url>
                         <label class="input-label" for="urlImg">Email</label>
+                        <!--                 <span class="input-message-error">Este campo no es valido</span>
+        -->
                     </div>
 
                     <div class="input-container">
-                        <textarea name="comentario" id="comentario" class="input" type="text" placeholder="comentario"
-                            required cols="30" rows="8"></textarea>
-                        <label class="input-label" for="urlImg">Comentario</label>
+                        <input name="password" id="password" class="input" type="text" placeholder="Digite su pasword"
+                            required data-url>
+                        <label class="input-label" for="urlImg">Escribe tu mensaje</label>
+                        <!--                 <span class="input-message-error">Este campo no es valido</span>
+        -->
                     </div>
-                    <div class="btn">
-                        <button class="button" value="Enviar" type="submit">Enviar</button>
-                    </div>
+                    <button class="button">Enviar</button>
                 </form>
             </div>
         </section>
+
     </main>
 
     <footer>
