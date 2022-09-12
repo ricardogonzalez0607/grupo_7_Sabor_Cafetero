@@ -4,12 +4,14 @@
     display: flex;
     justify-content: center;
     font-size: 1.5rem;
+    font-weight: 600;
     font-family: 'Nanum Myeongjo', cursive;
     list-style-type: none;
     display: flex;
   }
   .one {
     color: #e8799d;
+    font-weight: 600;
   }
   /* <!-- Using the custom property `--i` to calculate the animation duration. --> */
   li {
@@ -441,8 +443,6 @@ footer {
   width: 100%;
 }
 
-
-
 @media (min-width:481px){
   header {
     position: absolute;
@@ -464,6 +464,7 @@ footer {
         background-color: transparent;
         border-color: transparent;
         font-size: 25px;
+        margin-left: 2rem;
     }
     .left input:focus{
         outline: none;
@@ -562,8 +563,22 @@ footer {
     transition: none;
   }
 
-  label:before,
-  label:after {
+  .lab {
+    background-color: whitesmoke;
+  }
+
+  .services div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .services div h4, p {
+    color:#2C2C2C;
+    margin-bottom: -.4rem;
+  }
+
+  .lab:before,
+  .lab:after {
     display: none;
   }
 
