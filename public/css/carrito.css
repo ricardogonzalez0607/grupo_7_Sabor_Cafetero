@@ -236,7 +236,7 @@
   .carrito {
     background-color: white;
     border-radius: 10px;
-    width: 80%;
+    width: 70%;
     margin: 2rem auto;
   }
   .carrito>div {
@@ -270,12 +270,25 @@
   }
   .stock p {
     display: inline-block;
-    margin-right: -50px;
+    margin-right: -200px;
     margin-left: 100px;
   }
 
   .eliminar {
     width: 100%;
     border-bottom: .5px solid lightgray;
+  }
+
+  .bottom {
+    flex-direction: column;
+    align-self: flex-end;
+  }
+  .bottom div {
+    margin-right: 200;
+  }
+
+  .btn-continuar {
+    width: 35%;
+    margin-left: 33%;
   }
 }
