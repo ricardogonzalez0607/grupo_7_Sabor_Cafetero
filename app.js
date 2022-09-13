@@ -12,7 +12,7 @@ testGet('/', './index.html')
 testGet('/carrito', 'views/carrito.html')
 testGet('/detalle-producto', 'views/detalle-producto.html')
 testGet('/login', 'views/login.html')
-testGet('/registro-usuarios', 'views/registro-usuarios.html')
+testGet('/register', 'views/register.html')
 
 
 
