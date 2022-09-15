@@ -8,6 +8,10 @@ const testGet = (p, ruta) => {
     app.get(p, (req, res)=>res.sendFile(path.join(__dirname, ruta)))
 }
 
+app.post('/login',(req,res)=>{
+    res.sendFile(path.join(__dirname,'./views/login.html'))
+})
+
 testGet('/', './index.html')
 testGet('/carrito', 'views/carrito.html')
 testGet('/detalle-producto', 'views/detalle-producto.html')

@@ -60,6 +60,9 @@ https://latiendadelcafe.co/
 
 Son una empresa comercializadora de café. Pero nos interesa la estética del su sitio Web y sus funcionalidades.
 
+Tablero de trabajo
+https://trello.com/b/9LmyQL8H/sabor-cafetero
+
 Grupo colaborativo #7
 
 Jorge

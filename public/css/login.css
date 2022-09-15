@@ -299,7 +299,7 @@ input {
   top: -50px;
   border: 2px solid #FF0059;
   border-radius: 7px;
-  width: 40%;
+  width: 60%;
   font-family: 'Rubik Dirt', sans-serif;
   padding: 1.125rem;
   box-sizing: border-box;
@@ -433,7 +433,7 @@ footer {
   }
 
   .container {
-    font-size: 4rem;
+    font-size: 2rem;
   }
 
   .login div {
