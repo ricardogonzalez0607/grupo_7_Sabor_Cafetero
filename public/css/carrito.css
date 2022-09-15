@@ -285,6 +285,7 @@
   }
   .bottom div {
     margin-right: 200;
+    gap: 9rem;
   }
 
   .btn-continuar {
