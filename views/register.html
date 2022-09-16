@@ -15,11 +15,49 @@
 
 <body>
     <header>
+        <div class="left">
+            <input class="bar" type="text" placeholder="Buscar">
+            <i class="fas fa-search ileft"></i>
+        </div>
+        <div class="titulo">
+            <a href="/">
+                <ul class="container one">
+                    <li style="--i:1">S</li>
+                    <li style="--i:1.3">A</li>
+                    <li style="--i:1.6">B</li>
+                    <li style="--i:1.9">O</li>
+                    <li style="--i:2.2">R</li>
+                </ul>
+                <ul class="container">
+                    <li style="--i:1">C</li>
+                    <li style="--i:1.3">A</li>
+                    <li style="--i:1.6">F</li>
+                    <li style="--i:1.9">E</li>
+                    <li style="--i:2.2">T</li>
+                    <li style="--i:2.5">E</li>
+                    <li style="--i:2.8">R</li>
+                    <li style="--i:3.1">O</li>
+                </ul>
+            </a>
+        </div>
+        <div class="right">
+            <a href="login">
+                <i class="fas fa-user ione"></i>
+            </a>
+            <a href="productCart">
+                <i class="fas fa-shopping-cart itwo"></i>
+            </a>
+        </div>
     </header>
     <main>
         <section class="login">
             <div class="login">
+<<<<<<< HEAD
                 <form class="formulario" action="login" method="">
+=======
+                <img src="/img/cafetal2.jpg" alt="cafetal2">
+                <form class="formulario" action="/" method="POST">
+>>>>>>> 68ab9d4c6898ae3031682cb3fb89e9f20a459775
                     <h2>Crear un nuevo usuario</h2>
                     <div class="input-container-login">
                         <input name="nombre" id="username" class="input" type="text" placeholder="Nombre" required>
@@ -31,7 +69,7 @@
                         <label class="input-label" for="urlImg">Apellido</label>
                     </div>
                     <div class="input-container-login">
-                        <input name="email" id="email" class="input" type="text" placeholder="e-mail" required>
+                        <input name="email" id="email" class="input" type="email" placeholder="e-mail" required>
                         <label class="input-label" for="urlImg">e-mail</label>
                     </div>
                     <div class="input-container-login">
@@ -45,30 +83,39 @@
                         <label class="input-label" for="urlImg">Confirma Contraseña</label>
                     </div>
                     <div class="btnLogin">
+<<<<<<< HEAD
                         <input class="buttonLogin" value="Ingresar" type="submit">
+=======
+                        <button class="buttonLogin" value="login" type="submit">Crear Cuenta</button>
+>>>>>>> 68ab9d4c6898ae3031682cb3fb89e9f20a459775
                     </div>
                 </form>
             </div>
         </section>
-        <section class="options">
+        <section class="contacto">
             <div>
-                <button id="google" class="btngoogle" type="button"><span class="button__text">Ingresar con</span>
-                <img src="https://assets.digitalhouse.com/pg/prod/logos/google-small.png" class="auth-page__button--strategy--logo"></button>
-            </div>
-            <div>
-                <a href="/login">Condiciones de uso</a>
-            </div>
-            <div>
-                <a href="/login">Aviso de privacidad</a>
-            </div>
-            <div>
-                <p>¿Ya tienes cuenta?</p>
-                <a href="/register">Iniciar Sesión</a>
+                <img src="https://cdn.pixabay.com/photo/2016/11/23/18/15/board-1854180__340.jpg" alt="">
+                <form action="#" class="formulario" data-form>
+                    <h2>Contactenos</h2>
+                    <div class="input-container">
+                        <input name="email" id="email" class="input" type="text" placeholder="ejm... myemail@gmail.com"
+                            required data-url>
+                        <label class="input-label" for="urlImg">Email</label>
+                    </div>
+                    <div class="input-container">
+                        <textarea name="comentario" id="comentario" class="input" type="text" placeholder="comentario"
+                            cols="30" rows="10"></textarea>
+                        <label class="input-label" for="urlImg">Escribe tu mensaje</label>
+                    </div>
+                    <button class="buttonEnviar">Enviar</button>
+                </form>
             </div>
         </section>
+
     </main>
 
     <footer>
+        <h2>Copyright ©️ 2022 Sabor Cafetero</h2>
     </footer>
 
     <script src="js/index.js"></script>

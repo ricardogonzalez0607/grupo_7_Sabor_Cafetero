@@ -1,4 +1,8 @@
 /*nombre pagina*/
+.titulo a{
+  text-decoration: none;
+}
+
 .container {
   color: white;
   display: flex;
@@ -129,8 +133,19 @@ input {
 
 .login div {
   display: flex;
+  position: relative;
   flex-direction: column;
-  background-color: white;
+  background-color: transparent;
+  justify-content: center;
+
+}
+
+.login img {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .contacto img {
@@ -149,13 +164,14 @@ input {
 }
 
 .formulario {
-  width: 100%;
   height: auto;
   font-family: 'Rubik Dirt', sans-serif;
+  align-self: center;
 }
 
 .login .formulario {
-  width: 50%;
+  display: flex;
+  justify-content: center;
   padding-bottom: 100px;
   font-family: 'Rubik Dirt', sans-serif;
 }
@@ -197,19 +213,39 @@ input {
   font-family: 'Rubik Dirt', sans-serif;
   font-style: normal;
   font-size: 28px;
-  line-height: 26px;
+  line-height: 15px;
   color: white;
   margin: 1rem 0 2rem 0;
   text-shadow: 3px 3px 3px #2C2C2C;
   align-self: center;
 }
 
-.btnCrearCuenta a {
+.btnCrearCuenta .btnCC {
   font-family: 'Rubik Dirt', sans-serif;
   font-style: normal;
   margin-top: 30px;
   font-size: 20px;
   color: grey;
+  text-decoration: none;
+}
+
+.btnLogin .link {
+  font-family: 'Rubik Dirt', sans-serif;
+  font-style: normal;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  font-size: 20px;
+  color: rgb(248, 248, 248);
+  text-align: center;
+}
+
+.btnCrearCuenta .link {
+  font-family: 'Rubik Dirt', sans-serif;
+  font-style: normal;
+  margin-top: 30px;
+  font-size: 20px;
+  color: rgb(248, 248, 248);
+  text-align: center;
 }
 
 .input-container-login {
@@ -240,12 +276,31 @@ input {
   width: 100%;
 }
 
+
 .input::placeholder {
   visibility: hidden;
 }
 
 .input:focus {
   outline: none;
+}
+
+.input-label1 {
+  position: absolute;
+  top: -0.6rem;
+  left: 0.5rem;
+  font-size: 18px;
+  transition: all 0.25s;
+  color: #A2A2A2;
+}
+
+.input:not(:placeholder-shown)+.input-label1,
+.input:focus+.input-label1 {
+  top: .25rem;
+  font-size: 0.875rem;
+  top: -3rem;
+  transition: all 0.25s;
+  color: white;
 }
 
 .input-label {
@@ -293,13 +348,39 @@ input {
   justify-content: center;
 }
 
+.buttonCrearCuenta {
+  display: block;
+  /*  background-color: #FF0059; */
+  border: 2px solid #FF0059;
+  border-radius: 7px;
+  font-family: 'Rubik Dirt', sans-serif;
+  padding: 1.125rem;
+  box-sizing: border-box;
+  color: #EC0650;
+  font-size: 22px;
+  align-self: center;
+  text-align: center;
+}
+
+.buttonCrearCuenta:hover {
+  /* color: #FF0059;
+    background-color: white;
+    border-color: #FF0059; */
+  cursor: pointer;
+  opacity: .7;
+}
+
+.btnCrearCuenta {
+  justify-content: center;
+}
+
 .buttonEnviar {
   display: block;
   position: relative;
   top: -50px;
   border: 2px solid #FF0059;
   border-radius: 7px;
-  width: 40%;
+  width: 60%;
   font-family: 'Rubik Dirt', sans-serif;
   padding: 1.125rem;
   box-sizing: border-box;
@@ -336,10 +417,6 @@ footer {
     display: none;
   }
 
-  .login div {
-    flex-direction: row;
-  }
-
   .login .formulario {
     width: 80%;
   }
@@ -361,14 +438,16 @@ footer {
     text-shadow: 2px 2px 2px #2C2C2C;
     align-self: center;
   }
+
+  .formulario .input-container-login {
+    margin: 60px 0;
+  }
+  
 }
 
 
 @media (min-width: 481px) and (max-width: 768px) {
 
-  .login div {
-    flex-direction: row;
-  }
 
   .contacto img {
     width: 50%;
@@ -396,6 +475,14 @@ footer {
     align-self: center;
   }
 
+  .formulario .input-container-login {
+    margin: 80px 0;
+  }
+
+  .login .formulario {
+    width: 45%;
+  }
+
 }
 
 @media (min-width: 769px) and (max-width: 1279px) {
@@ -403,10 +490,6 @@ footer {
   .titulo {
     position: relative;
     left: -10px;
-  }
-
-  .login div {
-    flex-direction: row;
   }
 
   .contacto div {
@@ -420,9 +503,20 @@ footer {
     position: relative;
     top: 60px;
   }
+  .contacto .formulario{
+    width: 50%;
+  }
 
   .formulario {
     flex-direction: column;
+  }
+
+  .formulario .input-container-login {
+    margin: 80px 0;
+  }
+
+  .login .formulario {
+    width: 45%;
   }
 }
 
@@ -433,11 +527,7 @@ footer {
   }
 
   .container {
-    font-size: 4rem;
-  }
-
-  .login div {
-    flex-direction: row;
+    font-size: 2rem;
   }
 
   .contacto div {
@@ -445,11 +535,14 @@ footer {
   }
 
   .contacto img {
-    width: 100%;
+    width: 60%;
     height: 600px;
     margin-right: 1rem;
     position: relative;
     top: 0px;
+  }
+  .contacto .formulario{
+    width: 40%;
   }
 
   .formulario {
@@ -463,6 +556,7 @@ footer {
   .login .formulario h2 {
     font-size: 60px;
     text-align: center;
+    margin-bottom: 30px;
   }
 
   .contacto .formulario h2 {
@@ -477,5 +571,12 @@ footer {
 
   form {
     display: block;
+  }
+
+  .buttonEnviar {
+    display: block;
+    position: relative;
+    left: 100px;
+    top: -50px;
   }
 }

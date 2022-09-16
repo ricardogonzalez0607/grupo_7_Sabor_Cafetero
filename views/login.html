@@ -20,29 +20,31 @@
             <i class="fas fa-search ileft"></i>
         </div>
         <div class="titulo">
-            <ul class="container one">
-                <li style="--i:1">S</li>
-                <li style="--i:1.3">A</li>
-                <li style="--i:1.6">B</li>
-                <li style="--i:1.9">O</li>
-                <li style="--i:2.2">R</li>
-            </ul>
-            <ul class="container">
-                <li style="--i:1">C</li>
-                <li style="--i:1.3">A</li>
-                <li style="--i:1.6">F</li>
-                <li style="--i:1.9">E</li>
-                <li style="--i:2.2">T</li>
-                <li style="--i:2.5">E</li>
-                <li style="--i:2.8">R</li>
-                <li style="--i:3.1">O</li>
-            </ul>
+            <a href="/">
+                <ul class="container one">
+                    <li style="--i:1">S</li>
+                    <li style="--i:1.3">A</li>
+                    <li style="--i:1.6">B</li>
+                    <li style="--i:1.9">O</li>
+                    <li style="--i:2.2">R</li>
+                </ul>
+                <ul class="container">
+                    <li style="--i:1">C</li>
+                    <li style="--i:1.3">A</li>
+                    <li style="--i:1.6">F</li>
+                    <li style="--i:1.9">E</li>
+                    <li style="--i:2.2">T</li>
+                    <li style="--i:2.5">E</li>
+                    <li style="--i:2.8">R</li>
+                    <li style="--i:3.1">O</li>
+                </ul>
+            </a>
         </div>
         <div class="right">
             <a href="login">
                 <i class="fas fa-user ione"></i>
             </a>
-            <a href="carrito">
+            <a href="productCart">
                 <i class="fas fa-shopping-cart itwo"></i>
             </a>
         </div>
@@ -50,30 +52,31 @@
     <main>
         <section class="login">
             <div class="login">
+                <img src="/img/cafetal1.jpg" alt="cafetal1">
                 <form class="formulario" action="/" method="POST">
                     <h2>Datos de usuario</h2>
                     <div class="input-container-login">
-                        <input name="user" id="user" class="input" type="text" placeholder="Usuario"
-                            required data-url>
-                        <label class="input-label" for="urlImg">Usuario</label>
+                        <input name="user" id="user" class="input" type="email" placeholder="Usuario" required data-url>
+                        <label class="input-label1" for="urlImg">Usuario</label>
                     </div>
 
                     <div class="input-container-login">
                         <input name="password" id="password" class="input" type="password" placeholder="Contraseña"
                             required>
-                        <label class="input-label" for="urlImg">Contraseña</label>
+                        <label class="input-label1" for="urlImg">Contraseña</label>
                     </div>
                     <div class="btnLogin">
+                        <a href="/" class="link">He olvidado la contraseña</a>
                         <button class="buttonLogin" value="login" type="submit">Login</button>
                     </div>
+
                 </form>
-            </div>
-        </section>
-        <section>
-            <div class="btnCrearCuenta">
-                <h2>¿No tienes cuenta aún?</h2>
-                <button class="buttonLogin" name="crearCuenta" value="crearCuenta" type="submit">Crear Cuenta</button>
-                <a href="/register">He olvidado la contraseña</a>
+                <div class="btnCrearCuenta">
+                    <h2>¿No tienes cuenta aún?</h2>
+                    <a href="/register" class="btnCC"><button class="buttonCrearCuenta" name="crearCuenta"
+                            value="crearCuenta" type="submit">Crear Cuenta</button></a>
+                    <a href="/" class="link">Términos y Condiciones - Política de Privacidad</a>
+                </div>
             </div>
         </section>
         <section class="contacto">
@@ -87,7 +90,8 @@
                         <label class="input-label" for="urlImg">Email</label>
                     </div>
                     <div class="input-container">
-                        <textarea name="comentario" id="comentario" class="input" type="text" placeholder="comentario" cols="30" rows="10"></textarea>
+                        <textarea name="comentario" id="comentario" class="input" type="text" placeholder="comentario"
+                            cols="30" rows="10"></textarea>
                         <label class="input-label" for="urlImg">Escribe tu mensaje</label>
                     </div>
                     <button class="buttonEnviar">Enviar</button>

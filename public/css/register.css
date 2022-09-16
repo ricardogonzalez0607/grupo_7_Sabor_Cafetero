@@ -1,279 +1,515 @@
-  * {
-    box-sizing: border-box;
-  }
-  
-  form {
-    display: flex;
-  }
-  
-  input {
-    position: absolute;
-  }
-  
-  /**/
-  .contacto {
-    padding: 1rem;
-  }
-  
-  .login div {
-    display: flex;
-    flex-direction: column;
-    background-color: white;
-  }
-  
-  .login {
-    justify-content: center;
-  }
-  
-  .formulario {
-    width: 100%;
-    height: auto;
-    font-family: 'Rubik Dirt', sans-serif;
-  }
-  
-  .login .formulario {
-    width: 50%;
-    padding-bottom: 100px;
-    font-family: 'Rubik Dirt', sans-serif;
-  }
-  
-  .login .formulario h2 {
-    font-family: 'Rubik Dirt', sans-serif;
-    font-size: 28px;
-    line-height: 26px;
-    color: white;
-    margin: 6rem 0 2rem 0;
-    text-shadow: 3px 3px 3px #2C2C2C;
-    align-self: center;
-  }
-  
-    
-  .input-container-login {
-    position: relative;
-    margin-bottom: 100px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    box-sizing: border-box;
-  }
-  
-  .input {
-    box-sizing: border-box;
-    border: 1px solid #EC0650;
-    border-radius: 5px;
-    padding: 1rem;
-    /* padding: 1.375rem 0.5rem 0.5rem; */
-    font-size: 22px;
-    width: 100%;
-  }
-  
-  .input::placeholder {
-    visibility: hidden;
-  }
-  
-  .input:focus {
-    outline: none;
-  }
-  
-  .input-label {
-    position: absolute;
-    top: 1.375rem;
-    left: 0.5rem;
-    font-size: 18px;
-    transition: all 0.25s;
-    color: #A2A2A2;
-  }
-  
-  .input:not(:placeholder-shown)+.input-label,
-  .input:focus+.input-label {
-    top: .25rem;
-    font-size: 0.875rem;
-    top: -1.00rem;
-    transition: all 0.25s;
-    color: #D6D6D6;
-  }
-  
-  .buttonLogin {
-    display: block;
-    /*  background-color: #FF0059; */
-    border: 2px solid #FF0059;
-    border-radius: 7px;
-    width: 50%;
-    font-family: 'Rubik Dirt', sans-serif;
-    padding: 1.125rem;
-    box-sizing: border-box;
-    color: #EC0650;
-    font-size: 22px;
-    align-self: center;
-    text-align: center;
-  }
-  
-  .buttonLogin:hover {
-    /* color: #FF0059;
-      background-color: white;
-      border-color: #FF0059; */
-    cursor: pointer;
-    opacity: .7;
-  }
-  
-  .btnLogin {
-    justify-content: center;
+/*nombre pagina*/
+.titulo a {
+  text-decoration: none;
+}
+
+.cafetal1 {
+  position: relative;
+}
+
+.container {
+  color: white;
+  display: flex;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-family: 'Nanum Myeongjo', cursive;
+  list-style-type: none;
+  display: flex;
+}
+
+.one {
+  color: #e8799d;
+  font-weight: 600;
+}
+
+/* <!-- Using the custom property `--i` to calculate the animation duration. --> */
+li {
+  animation-name: bubbly;
+  animation-duration: calc(var(--i) * .5s);
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+
+/* keyframes animacion título*/
+@keyframes bubbly {
+  0% {
+    opacity: 0;
+    /* transform: translateY(-100px); */
+    transform: scale(0);
   }
 
-  .options{
+  70% {
+    opacity: 1;
+    transform: scale(1.5);
+  }
+
+  100% {
+    opacity: 1;
+    /* transform: translateY(0); */
+    transform: scale(1);
+  }
+}
+
+/*header*/
+header {
+  background-color: #EC0650;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.left i {
+  color: #fff;
+  text-align: end;
+}
+
+.left,
+.right .fas {
+  font-size: 22px;
+  font-weight: 600;
+  /* color: white; */
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  width: 10%;
+}
+
+.left input {
+  /* margin-left: .5rem; */
+  display: inline-block;
+  background-color: transparent;
+  border-color: transparent;
+  font-size: 25px;
+  margin-left: 2rem;
+}
+
+.left input:focus {
+  outline: none;
+}
+
+.left input:active {
+  outline: none;
+}
+
+.left input::placeholder {
+  color: white;
+  /* hsla(173, 51%, 13%, 0.991); */
+}
+
+.ione {
+  padding: .5rem;
+  font-size: 16px;
+  background-color: #fff;
+  border-radius: 50%;
+  color: #EC0650;
+}
+
+.itwo {
+  color: white;
+}
+
+.right a {
+  text-decoration: none;
+}
+
+/**/
+* {
+  box-sizing: border-box;
+}
+
+form {
+  display: flex;
+}
+
+input {
+  position: absolute;
+}
+
+/**/
+.contacto {
+  background-color: #EC0650;
+  padding: 1rem;
+}
+
+.login div {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  background-color: transparent;
+  justify-content: center;
+}
+
+.login img {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.contacto img {
+  width: 100%;
+  height: 350px;
+  margin-right: 1rem;
+}
+
+.contacto div {
+  display: flex;
+  flex-direction: column;
+}
+
+.login {
+  justify-content: center;
+}
+
+.formulario {
+  width: 100%;
+  height: auto;
+  font-family: 'Rubik Dirt', sans-serif;
+}
+
+.login .formulario {
+  width: 50%;
+  padding-bottom: 100px;
+  font-family: 'Rubik Dirt', sans-serif;
+}
+
+.login .formulario h2 {
+  font-family: 'Rubik Dirt', sans-serif;
+  font-size: 32px;
+  line-height: 26px;
+  color: white;
+  margin: 6rem 0 2rem 0;
+  text-shadow: 3px 3px 3px #2C2C2C;
+  align-self: center;
+}
+
+.contacto .formulario h2 {
+  font-family: 'Rubik Dirt', sans-serif;
+  font-style: normal;
+  font-size: 32px;
+  line-height: 26px;
+  color: white;
+  margin: 1rem 0 2rem 0;
+  text-shadow: 2px 2px 2px #2C2C2C;
+  align-self: center;
+}
+
+
+.btnCrearCuenta {
+  display: flex;
+  padding: 50px 0px;
+  flex-direction: column;
+  background-color: white;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+
+}
+
+.btnCrearCuenta h2 {
+  font-family: 'Rubik Dirt', sans-serif;
+  font-style: normal;
+  font-size: 28px;
+  line-height: 26px;
+  color: white;
+  margin: 1rem 0 2rem 0;
+  text-shadow: 3px 3px 3px #2C2C2C;
+  align-self: center;
+}
+
+.btnCrearCuenta a {
+  font-family: 'Rubik Dirt', sans-serif;
+  font-style: normal;
+  margin-top: 30px;
+  font-size: 20px;
+  color: grey;
+}
+
+.input-container-login {
+  position: relative;
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.input-container {
+  position: relative;
+  margin-bottom: 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.input {
+  box-sizing: border-box;
+  border: 1px solid #EC0650;
+  border-radius: 5px;
+  padding: 1rem;
+  /* padding: 1.375rem 0.5rem 0.5rem; */
+  font-size: 22px;
+  width: 100%;
+}
+
+.input::placeholder {
+  visibility: hidden;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.input-label {
+  position: absolute;
+  top: 1.375rem;
+  left: 0.5rem;
+  font-size: 18px;
+  transition: all 0.25s;
+  color: #A2A2A2;
+}
+
+.input:not(:placeholder-shown)+.input-label,
+.input:focus+.input-label {
+  top: .25rem;
+  font-size: 0.875rem;
+  top: -1.00rem;
+  transition: all 0.25s;
+  color: white;
+}
+
+.buttonLogin {
+  display: block;
+  /*  background-color: #FF0059; */
+  border: 2px solid #FF0059;
+  border-radius: 7px;
+  width: 50%;
+  font-family: 'Rubik Dirt', sans-serif;
+  padding: 1.125rem;
+  box-sizing: border-box;
+  color: #EC0650;
+  font-size: 22px;
+  align-self: center;
+  text-align: center;
+}
+
+.buttonLogin:hover {
+  /* color: #FF0059;
     background-color: white;
+    border-color: #FF0059; */
+  cursor: pointer;
+  opacity: .7;
+}
+
+.btnLogin {
+  justify-content: center;
+}
+
+.buttonEnviar {
+  display: block;
+  position: relative;
+  top: -50px;
+  border: 2px solid #FF0059;
+  border-radius: 7px;
+  width: 60%;
+  font-family: 'Rubik Dirt', sans-serif;
+  padding: 1.125rem;
+  box-sizing: border-box;
+  color: #EC0650;
+  font-size: 22px;
+  align-self: center;
+  text-align: center;
+}
+
+.buttonEnviar:hover {
+  /* color: #FF0059;
+    background-color: white;
+    border-color: #FF0059; */
+  cursor: pointer;
+  opacity: .7;
+}
+
+footer {
+  background-color: #454545;
+  color: white;
+  font-size: 16px;
+  padding: 50px 0;
+  text-align: center;
+  width: 100%;
+}
+
+@media (max-width: 480px) {
+  .titulo {
+    position: relative;
+    left: 15px;
   }
-  
-  @media (max-width: 480px) {
-    .titulo {
-      position: relative;
-      left: 15px;
-    }
-  
-    .left input {
-      display: none;
-    }
-  
-    .login div {
-      flex-direction: row;
-    }
-  
-    .login .formulario {
-      width: 80%;
-    }
-  
-    .contacto img {
-      display: none;
-    }
-  
-    .contacto div {
-      flex-direction: row;
-    }
-  
-    .formulario {
-      flex-direction: column;
-    }
-  
-    .contacto .formulario h2 {
-      margin: 1rem 0 2rem 0;
-      text-shadow: 2px 2px 2px #2C2C2C;
-      align-self: center;
-    }
+
+  .left input {
+    display: none;
   }
-  
-  
-  @media (min-width: 481px) and (max-width: 768px) {
-  
-    .login div {
-      flex-direction: row;
-    }
-  
-    .contacto img {
-      width: 50%;
-      height: 400px;
-      margin-right: 1rem;
-      position: relative;
-      top: 60px;
-    }
-  
-    .contacto div {
-      flex-direction: row;
-    }
-  
-    .formulario {
-      flex-direction: column;
-    }
-  
-    .input-container {
-      margin-bottom: 90px;
-    }
-  
-    .contacto .formulario h2 {
-      margin: 1rem 0 2rem 0;
-      text-shadow: 2px 2px 2px #2C2C2C;
-      align-self: center;
-    }
-  
+
+  .login div {
+    flex-direction: row;
   }
-  
-  @media (min-width: 769px) and (max-width: 1279px) {
-  
-    .titulo {
-      position: relative;
-      left: -10px;
-    }
-  
-    .login div {
-      flex-direction: row;
-    }
-  
-    .contacto div {
-      flex-direction: row;
-    }
-  
-    .contacto img {
-      width: 50%;
-      height: 400px;
-      margin-right: 1rem;
-      position: relative;
-      top: 60px;
-    }
-  
-    .formulario {
-      flex-direction: column;
-    }
+
+  .login .formulario {
+    width: 80%;
   }
-  
-  @media (min-width: 1280px) {
-    .titulo {
-      position: relative;
-      left: -30px;
-    }
-  
-    .container {
-      font-size: 4rem;
-    }
-  
-    .login div {
-      flex-direction: row;
-    }
-  
-    .contacto div {
-      flex-direction: row;
-    }
-  
-    .contacto img {
-      width: 100%;
-      height: 600px;
-      margin-right: 1rem;
-      position: relative;
-      top: 0px;
-    }
-  
-    .formulario {
-      flex-direction: column;
-    }
-  
-    .formulario .input-container-login {
-      margin: 80px 0;
-    }
-  
-    .login .formulario h2 {
-      font-size: 60px;
-      text-align: center;
-    }
-  
-    .contacto .formulario h2 {
-      font-size: 60px;
-      margin-bottom: 100px;
-      text-align: center;
-    }
-  
-    .login .formulario {
-      width: 40%;
-    }
-  
-    form {
-      display: block;
-    }
+
+  .contacto img {
+    display: none;
   }
+
+  .contacto div {
+    flex-direction: row;
+  }
+
+  .formulario {
+    flex-direction: column;
+  }
+
+  .contacto .formulario h2 {
+    margin: 1rem 0 2rem 0;
+    text-shadow: 2px 2px 2px #2C2C2C;
+    align-self: center;
+  }
+
+  .login .formulario h2 {
+    font-size: 30px;
+    text-align: center;
+  }
+
+}
+
+
+@media (min-width: 481px) and (max-width: 768px) {
+
+  .login div {
+    flex-direction: row;
+  }
+
+  .contacto img {
+    width: 50%;
+    height: 400px;
+    margin-right: 1rem;
+    position: relative;
+    top: 60px;
+  }
+
+  .contacto div {
+    flex-direction: row;
+  }
+
+  .formulario {
+    flex-direction: column;
+  }
+
+  .input-container {
+    margin-bottom: 90px;
+  }
+
+  .contacto .formulario h2 {
+    margin: 1rem 0 2rem 0;
+    text-shadow: 2px 2px 2px #2C2C2C;
+    align-self: center;
+  }
+
+}
+
+@media (min-width: 769px) and (max-width: 1279px) {
+
+  .titulo {
+    position: relative;
+    left: -10px;
+  }
+
+  .login div {
+    flex-direction: row;
+  }
+
+  .contacto div {
+    flex-direction: row;
+  }
+
+  .contacto img {
+    width: 50%;
+    height: 400px;
+    margin-right: 1rem;
+    position: relative;
+    top: 60px;
+  }
+
+  .formulario {
+    flex-direction: column;
+  }
+
+}
+
+@media (min-width: 1280px) {
+  .titulo {
+    position: relative;
+    left: -30px;
+  }
+
+  .container {
+    font-size: 2rem;
+  }
+
+  .login div {
+    flex-direction: row;
+  }
+
+  .contacto div {
+    flex-direction: row;
+  }
+
+  .contacto img {
+    width: 100%;
+    height: 600px;
+    margin-right: 1rem;
+    position: relative;
+    top: 0px;
+  }
+
+  .formulario {
+    flex-direction: column;
+  }
+
+  .formulario .input-container-login {
+    margin: 80px 0;
+  }
+
+  .login .formulario h2 {
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .contacto .formulario h2 {
+    font-size: 40px;
+    margin-bottom: 100px;
+    text-align: center;
+  }
+
+  .login .formulario {
+    width: 40%;
+  }
+
+  form {
+    display: block;
+  }
+
+  .buttonEnviar {
+    position: relative;
+    top: -30px;
+    left: 100px;
+  }
+
+
+
+}
