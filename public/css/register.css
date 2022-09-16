@@ -1,4 +1,8 @@
 /*nombre pagina*/
+.titulo a {
+  text-decoration: none;
+}
+
 .cafetal1 {
   position: relative;
 }

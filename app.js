@@ -13,9 +13,9 @@ app.post('/',(req,res)=>{
 })
 
 testGet('/', './index.html')
-testGet('/carrito', 'views/carrito.html')
-testGet('/detalle-producto', 'views/detalle-producto.html')
-testGet('/login', './views/login.html')
+testGet('/productCart', 'views/productCart.html')
+testGet('/productDetail', 'views/productDetail.html')
+testGet('/login', 'views/login.html')
 testGet('/register', 'views/register.html')
 
 
