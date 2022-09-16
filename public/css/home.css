@@ -626,6 +626,22 @@ footer {
   }
 
   .formulario {
+    flex-direction: column;
+  }
+
+  .contacto div {
+    flex-direction: row;
+  }
+
+  .contacto img {
+    width: 50%;
+    height: 400px;
+    margin-right: 1rem;
+    position: relative;
+    top: 60px;
+  }
+
+  .formulario {
     display: flex;
     flex-direction: column;
   }
@@ -746,6 +762,14 @@ footer {
 
   .formulario h2 {
     margin: 1rem;
+  }
+
+  .contacto img {
+    width: 50%;
+    height: 400px;
+    margin-right: 1rem;
+    position: relative;
+    top: 60px;
   }
 
   .contacto img {
