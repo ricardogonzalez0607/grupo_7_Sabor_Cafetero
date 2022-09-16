@@ -1,8 +1,7 @@
 Retrospectiva Estrella de Mar
 1. Comenzar a hacer.
 -Planificar mejor cada una de las actividades a realizar y asignar responsables. Además, establecer fechas de entrega. 
--Establecer al menos dos días a la semana donde nos podamos reunir para socializar los avances y comunicar las diferentes
- dificultades que se presenten.
+-Establecer al menos dos días a la semana donde nos podamos reunir para socializar los avances y comunicar las diferentes dificultades que se presenten.
 
 2. Hacer más.
 -Interactuar más con las herramientas Ágiles y sacarles mejor partido.
