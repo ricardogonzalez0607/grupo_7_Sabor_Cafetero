@@ -17,7 +17,7 @@ testGet('/productCart', 'views/productCart.html')
 testGet('/productDetail', 'views/productDetail.html')
 testGet('/login', 'views/login.html')
 testGet('/register', 'views/register.html')
-
+app.get('/login', (req, res)=>res.sendFile(path.join(__dirname, './views/login.html')))
 
 
 
